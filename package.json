@@ -1,0 +1,26 @@
+{
+  "name": "kizu",
+  "version": "2.0.0",
+  "private": true,
+  "description": "傷は地図になる (Scars Become a Map): a music video written entirely as code with Claude and Remotion",
+  "scripts": {
+    "dev": "remotion studio src/kizu2/index.tsx",
+    "render": "remotion render src/kizu2/index.tsx Kizu2 out/kizu2-daughter.mp4 --gl=angle --timeout=240000",
+    "stills": "node scripts/kizu2-stills.mjs",
+    "docs": "node scripts/kizu2-docs.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.532",
+    "@remotion/cli": "4.0.532",
+    "@remotion/google-fonts": "4.0.532",
+    "@remotion/renderer": "4.0.532",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "remotion": "4.0.532"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "typescript": "^5.9.0"
+  }
+}
